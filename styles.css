@@ -152,3 +152,24 @@
     height: 180px;
   }
 }
+/* Portrait image in photo mosaic */
+
+@media(max-width:850px){
+
+  .photo-mosaic .mosaic-item.portrait{
+
+    height:auto;
+
+    aspect-ratio:4 / 5;
+
+  }
+
+  .photo-mosaic .mosaic-item.portrait img{
+
+    object-fit:cover;
+
+    object-position:center;
+
+  }
+
+}
