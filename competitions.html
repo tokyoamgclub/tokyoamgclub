@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link href="favicon.png" rel="icon" type="image/png"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Hall of Winners | AMG Private Lounge 東京ハブ</title>
+<meta content="AMG Private Lounge 東京ハブで開催したコンペティションと歴代入賞者の記録です。" name="description"/>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+<div class="header-inner">
+<a class="brand" href="index.html#home">
+<span>AMG PRIVATE LOUNGE</span>
+<strong>東京ハブ</strong>
+</a>
+<nav>
+<a href="index.html#guide">登録ガイド</a>
+<a href="index.html#about">東京ハブについて</a>
+<a href="index.html#manager">Tokyo Hub Manager</a>
+<a href="index.html#spotlight">Member Spotlight</a>
+<a href="index.html#activity">イベント</a>
+<a aria-current="page" href="competitions.html">Competitions</a>
+<a href="index.html#partners">パートナー</a>
+</nav>
+<a class="cta small" href="https://www.mercedes-amg.com/en/community" target="_blank">公式サイトを見る</a>
+</div>
+</header>
+
+<main class="competitions-page">
+<section class="competition-hero">
+<p class="eyebrow">TOKYO HUB COMPETITIONS</p>
+<h1>Hall of Winners</h1>
+<p class="lead">仲間と楽しむ挑戦、その記録をここに。クラブで開催したコンペティションと歴代入賞者をご紹介します。</p>
+</section>
+
+<section class="competition-archive" aria-labelledby="archive-title">
+<div class="archive-heading">
+<div>
+<p class="eyebrow">COMPETITION ARCHIVE</p>
+<h2 id="archive-title">開催記録・入賞者</h2>
+</div>
+<p class="archive-count" aria-live="polite"><span id="visible-count">3</span> records</p>
+</div>
+
+<div class="competition-filters" aria-label="大会種別で絞り込む">
+<button class="active" data-filter="all" type="button">すべて</button>
+<button data-filter="karting" type="button">Go Karting</button>
+<button data-filter="rally" type="button">Autumn Rally</button>
+</div>
+
+<section class="competition-year" data-year="2026">
+<h3>2026</h3>
+<div class="competition-list">
+<article class="competition-record upcoming" data-type="rally">
+<div class="record-summary">
+<p class="record-type">AUTUMN RALLY</p>
+<h4>Karuizawa Autumn Rally</h4>
+<p class="record-place">Karuizawa</p>
+</div>
+<time datetime="2026-11-07">2026.11.07</time>
+<div class="record-status"><span>UPCOMING</span><strong>結果掲載予定</strong></div>
+</article>
+
+<article class="competition-record" data-type="karting">
+<div class="record-summary">
+<p class="record-type">GO KARTING</p>
+<h4>Go Karting 2026</h4>
+<p class="record-place">New Tokyo Circuit · Chiba</p>
+</div>
+<time datetime="2026-05-17">2026.05.17</time>
+<ol class="podium" aria-label="Go Karting 2026 results">
+<li><span>1</span><strong>Toru H.</strong></li>
+<li><span>2</span><strong>Thomas W.</strong></li>
+<li><span>3</span><strong>Danny K.</strong></li>
+</ol>
+<p class="fastest-lap"><span>FASTEST LAP</span><strong>Robin L.</strong></p>
+</article>
+</div>
+</section>
+
+<section class="competition-year" data-year="2025">
+<h3>2025</h3>
+<div class="competition-list">
+<article class="competition-record no-winner" data-type="rally">
+<div class="record-summary">
+<p class="record-type">AUTUMN RALLY</p>
+<h4>Autumn Rally 2025</h4>
+<p class="record-place">Nikko Foliage · Nikko</p>
+</div>
+<time datetime="2025-11-08">2025.11.08</time>
+<div class="record-status"><span>HELD</span><strong>開催済み・入賞者なし</strong><small>Event held; no winners declared.</small></div>
+</article>
+</div>
+</section>
+
+<p class="privacy-note">入賞者名は、プライバシーに配慮し「名＋姓のイニシャル」で掲載しています。</p>
+</section>
+</main>
+
+<footer>
+<strong>AMG Private Lounge 東京ハブ</strong>
+<p>※本サイトは東京ハブ運営メンバーによる日本語ガイドページです。公式情報およびイベント申込はAMG Private Lounge公式サイトをご確認ください。</p>
+<p>最終更新：2026年9月</p>
+</footer>
+
+<script>
+const filterButtons = document.querySelectorAll('[data-filter]');
+const records = document.querySelectorAll('.competition-record');
+const years = document.querySelectorAll('.competition-year');
+const visibleCount = document.getElementById('visible-count');
+
+filterButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const filter = button.dataset.filter;
+    let count = 0;
+
+    filterButtons.forEach((item) => item.classList.toggle('active', item === button));
+    records.forEach((record) => {
+      const visible = filter === 'all' || record.dataset.type === filter;
+      record.hidden = !visible;
+      if (visible) count += 1;
+    });
+    years.forEach((year) => {
+      year.hidden = !year.querySelector('.competition-record:not([hidden])');
+    });
+    visibleCount.textContent = count;
+  });
+});
+</script>
+</body>
+</html>
