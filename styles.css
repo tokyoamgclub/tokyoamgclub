@@ -102,7 +102,10 @@
 .podium{list-style:none;margin:0;padding:0;display:grid;gap:7px}
 .podium li{display:flex;align-items:center;gap:12px}
 .podium li span{display:flex;align-items:center;justify-content:center;width:25px;height:25px;border:1px solid rgba(255,255,255,.2);border-radius:50%;color:#a1a1aa;font-size:12px}
-.podium li:first-child span{background:#dc2626;border-color:#dc2626;color:white}
+/* Gold, silver, and bronze for all podium results */
+.podium li:nth-child(1) span{background:#d4af37;border-color:#d4af37;color:#111}
+.podium li:nth-child(2) span{background:#c0c0c0;border-color:#c0c0c0;color:#111}
+.podium li:nth-child(3) span{background:#cd7f32;border-color:#cd7f32;color:#111}
 .fastest-lap{grid-column:3;margin:0!important;padding-top:12px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;gap:18px}
 .fastest-lap span,.record-status span{color:#ef4444;font-size:10px;letter-spacing:.18em;font-weight:800}
 .record-status{display:grid;gap:3px}
