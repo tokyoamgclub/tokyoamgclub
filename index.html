@@ -5,19 +5,124 @@
 <link href="favicon.png" rel="icon" type="image/png"/>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>AMG Private Lounge 東京ハブ</title>
-<meta content="AMG Private Lounge 東京ハブ — AMGオーナーのための公式コミュニティへの参加方法を、日本語でわかりやすくご案内します。" name="description"/>
-<meta content="AMG Private Lounge 東京ハブ" property="og:title"/>
-<meta content="AMGオーナーのための公式コミュニティへの参加方法を、日本語でわかりやすくご案内します。" property="og:description"/>
+<title>AMG Private Lounge 東京ハブ｜日本語登録ガイド・AMGオーナー交流</title>
+<meta content="AMGプライベートラウンジの登録方法、VIN登録、東京ハブへの参加を日本語で解説。AMGオーナーの交流やイベントも紹介する、東京ハブ運営メンバーによる日本語ガイドです。" name="description"/>
+<meta content="AMG Private Lounge 東京ハブ｜日本語登録ガイド・AMGオーナー交流" property="og:title"/>
+<meta content="AMGプライベートラウンジの登録方法と東京ハブへの参加を日本語でご案内。AMGオーナー同士の交流やイベントをご紹介します。" property="og:description"/>
 <meta content="https://tokyoamgclub.github.io/tokyoamgclub/assets/hero-official-pl-hub.jpg" property="og:image"/>
 <meta content="https://tokyoamgclub.github.io/tokyoamgclub/" property="og:url"/>
 <meta content="website" property="og:type"/>
 <meta content="ja_JP" property="og:locale"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="AMG Private Lounge 東京ハブ" name="twitter:title"/>
-<meta content="AMGオーナーのための公式コミュニティへの参加方法を、日本語でわかりやすくご案内します。" name="twitter:description"/>
+<meta content="AMG Private Lounge 東京ハブ｜日本語登録ガイド・AMGオーナー交流" name="twitter:title"/>
+<meta content="AMGプライベートラウンジの登録方法と東京ハブへの参加を日本語でご案内。AMGオーナー同士の交流やイベントをご紹介します。" name="twitter:description"/>
 <meta content="https://tokyoamgclub.github.io/tokyoamgclub/assets/hero-official-pl-hub.jpg" name="twitter:image"/>
 <link href="styles.css" rel="stylesheet"/>
+<link href="https://tokyoamgclub.github.io/tokyoamgclub/" rel="canonical"/>
+<style>
+/* Homepage refinements. The shared styles.css and other pages stay unchanged. */
+body{background:#080808;color:#f4f4f4;color-scheme:dark;font-size:15px;line-height:1.8}
+main,section,article,figure,.hero-copy,.header-inner>*{min-width:0}
+[id]{scroll-margin-top:165px}
+.header-inner{display:grid;grid-template-columns:1fr auto;gap:16px 24px;padding-top:18px;padding-bottom:18px}
+.header-inner nav{grid-column:1/-1;grid-row:2;border-top:1px solid #292929;padding-top:14px;gap:12px 22px}
+.header-inner nav a{white-space:nowrap;font-size:12px}
+.site-header .cta.small{grid-column:2;grid-row:1;white-space:nowrap;flex-shrink:0}
+.cta,.button-secondary,.contact-link{border-radius:0;font-size:13px}
+.cta{background:#ee4249}
+.hero{grid-template-columns:1.2fr 1fr;padding-top:20px;padding-bottom:48px;gap:36px}
+.hero-copy{grid-column:1;grid-row:1}
+.hero-image{grid-column:2;grid-row:1;border-radius:0;box-shadow:none}
+.hero-image img{aspect-ratio:1.15;object-fit:contain;background:#101010}
+.hero h1{font-size:clamp(34px,4vw,48px);line-height:1.2;letter-spacing:-.035em}
+.hero h1 .nowrap{display:block;font-size:27px;margin-top:10px}
+.lead{font-size:18px;line-height:1.9}
+.hero .buttons{gap:12px}
+.returning-member{font-size:12px;color:#a9a9ae;margin-top:18px}
+.returning-member a{color:inherit;text-decoration:none;border-bottom:1px solid #777}
+.section{padding-top:52px;padding-bottom:52px;border-bottom:1px solid #292929}
+.section h2{font-size:clamp(28px,3.3vw,38px);line-height:1.4;letter-spacing:-.025em}
+.section .eyebrow,.eyebrow{color:#c7c7cc;font-size:11px;letter-spacing:.25em}
+.cred-strip div{border-radius:0;background:#111;padding:18px 20px}
+.cred-strip strong{font-size:15px}
+.cred-strip span{font-size:13px}
+.muted{background:#111}
+.muted>*{max-width:1136px}
+.steps{gap:24px;margin:28px 0}
+.steps article{border:0;border-top:2px solid #ee4249;border-radius:0;background:none;padding:20px 0 0}
+.steps span{display:block;width:auto;height:auto;border-radius:0;background:none;color:#ee4249;font-size:25px;line-height:1.3}
+.steps h3{font-size:20px;margin:14px 0 10px}
+.steps p{font-size:14px}
+.panel.split{border-radius:0;background:#191919;padding:24px}
+.guide-title{font-size:23px;margin:0 0 8px}
+.panel.split p{font-size:14px;margin:0}
+.panel.split .buttons{margin-top:0}
+.registration-faq{margin-top:38px}
+.registration-faq h3{font-size:21px}
+.registration-faq details{border-top:1px solid #333}
+.registration-faq details:last-child{border-bottom:1px solid #333}
+.registration-faq summary{cursor:pointer;padding:17px 30px 17px 0;position:relative;list-style:none}
+.registration-faq summary::-webkit-details-marker{display:none}
+.registration-faq summary::after{content:'+';position:absolute;right:4px;top:11px;color:#ee4249;font-size:23px}
+.registration-faq details[open] summary::after{content:'−'}
+.registration-faq details p{font-size:14px;max-width:800px;margin:0 0 20px}
+.gifts-inner{display:grid;grid-template-columns:minmax(0,1fr) 556px;gap:36px;align-items:center}
+.gift-copy h2{font-size:30px}
+.gift-copy p{font-size:14px}
+.gift-copy .gift-note{font-size:12px;color:#a9a9ae}
+/* Four small photos in one row on desktop; two columns on phones. */
+.gift-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;width:100%;max-width:556px}
+.gift-grid figure{margin:0}
+.gift-grid img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 58%;border:1px solid #303030}
+.gift-grid figcaption{font-size:11px;color:#aaa;margin-top:8px;line-height:1.6}
+.cards article,.manager-card,.spotlight-soon,.partner-grid article{border-radius:0}
+.image-card,.portrait-image,.photo-small.image-fit,.hub-emblem-box{border-radius:0}
+.manager-card,.spotlight-soon{grid-template-columns:190px 1fr;gap:30px}
+.portrait-image,.photo-small.image-fit{height:190px}
+.cards h3,.manager-card h3,.spotlight-soon h3{font-size:22px}
+.competition-teaser{border:0;border-left:3px solid #ee4249;border-radius:0;background:#171717}
+.experience-grid article{border-radius:0}
+.photo-mosaic{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:auto;gap:18px}
+.photo-mosaic .mosaic-item,.photo-mosaic .mosaic-item.large,.photo-mosaic .mosaic-item.wide{margin:0;grid-column:auto;grid-row:auto;aspect-ratio:3/2;height:auto;min-height:0;border-radius:0}
+.photo-mosaic .mosaic-item img{width:100%;height:100%;object-fit:cover}
+.photo-mosaic .castle-photo img{object-fit:contain;background:#141414}
+.partner-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.partner-grid article{padding:20px 0 0;border:0;border-top:1px solid #414141;background:none}
+.partner-grid img{display:block;width:100%;height:106px;border-radius:0;padding:18px;background:#fff}
+.partner-grid h3{font-size:19px}
+.partner-grid p{font-size:14px}
+a:focus-visible,summary:focus-visible{outline:2px solid #ee4249;outline-offset:5px}
+@media(max-width:1050px){.gifts-inner{grid-template-columns:1fr;gap:18px}.gift-copy{max-width:720px}}
+@media(max-width:850px){
+  .header-inner nav{margin:0}
+  .site-header .cta.small{display:inline-flex;width:auto;margin:0}
+  .site-header{position:relative}
+  [id]{scroll-margin-top:20px}
+  .hero{grid-template-columns:1fr 1fr;gap:24px}
+  .panel.split .buttons{margin-top:18px}
+  .manager-card,.spotlight-soon{grid-template-columns:160px 1fr}
+  .portrait-image,.photo-small.image-fit{height:160px}
+  .partner-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:600px){
+  .hero{grid-template-columns:1fr;margin-top:14px}
+  .hero-copy{grid-column:1;grid-row:1}
+  .hero-image{grid-column:1;grid-row:2}
+  .hero-image img{aspect-ratio:1.6;object-fit:contain}
+  .hero h1{font-size:35px}
+  .lead{font-size:17px}
+  .section{padding-top:36px;padding-bottom:36px}
+  .header-inner{grid-template-columns:1fr}
+  .site-header .cta.small{grid-column:1;grid-row:2;justify-self:start}
+  .header-inner nav{grid-row:3}
+  .gift-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:272px}
+  .manager-card,.spotlight-soon,.partner-grid,.photo-mosaic{grid-template-columns:1fr}
+  .manager-card,.spotlight-soon{padding:22px}
+  .portrait-image,.photo-small.image-fit{width:160px}
+  .competition-teaser{padding:24px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.mosaic-item img{transition:none}}
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -26,7 +131,7 @@
 <span>AMG PRIVATE LOUNGE</span>
 <strong>東京ハブ</strong>
 </a>
-<nav>
+<nav aria-label="メインナビゲーション">
 <a href="#guide">登録ガイド</a>
 <a href="#about">東京ハブについて</a>
 <a href="#manager">Tokyo Hub Manager</a>
@@ -47,11 +152,12 @@
 <div class="hero-copy">
 <p class="eyebrow">AMG PRIVATE LOUNGE TOKYO</p>
 <h1>AMG Private Lounge <span class="nowrap">東京ハブ</span></h1>
-<p class="lead">AMGオーナーのための公式コミュニティへの参加方法を、日本語でわかりやすくご案内します。</p>
+<p class="lead">AMGと楽しむ時間を、仲間と。<br>登録から東京ハブへの参加まで、<br>日本語でわかりやすくご案内します。</p>
 <div class="buttons">
-<a class="cta" href="https://www.mercedes-amg.com/en/members/groups/432" target="_blank">PL東京ハブページを見る</a>
-<a class="button-secondary" href="#guide">登録手順を見る</a>
+<a class="cta" href="#guide">日本語の登録ガイドを見る ↓</a>
+<a class="button-secondary" href="#activity">イベントを見る</a>
 </div>
+<p class="returning-member">登録済みの方は <a href="https://www.mercedes-amg.com/en/members/groups/432" target="_blank" rel="noopener">公式Tokyo Hubページへ ↗</a></p>
 </div>
 </section>
 <section aria-label="Tokyo Hub credibility" class="cred-strip">
@@ -65,21 +171,58 @@
 </div>
 </section>
 <section class="section" id="guide">
-<p class="eyebrow">JOIN TOKYO HUB</p>
-<h2>参加までの流れ</h2>
+<p class="eyebrow">YOUR FIRST STEP</p>
+<h2>AMGプライベートラウンジの登録方法</h2>
+<p>英語のサイトでも大丈夫。日本語ガイドを見ながら、3つのステップで東京ハブへ。</p>
 <div class="steps">
-<article><span>1</span><h3>アカウント登録</h3><p>Mercedes-AMG公式サイトにログインします。Mercedes me IDをお持ちの場合は、同じ情報を使えます。</p></article>
-<article><span>2</span><h3>VIN登録</h3><p>AMGオーナー専用ページを有効化するため、車両のVIN番号を登録します。</p></article>
-<article><span>3</span><h3>東京ハブに参加</h3><p>東京ハブページで「Join group」をクリックすると、イベント情報にアクセスしやすくなります。</p></article>
+<article><span>01</span><h3>アカウント登録</h3><p>Mercedes-AMG公式サイトでアカウントを登録します。Mercedes me IDをお持ちの方は、同じ情報でログインできます。</p></article>
+<article><span>02</span><h3>愛車のVINを登録</h3><p>車両のVIN（車台番号）を登録し、AMGオーナー向けコンテンツへのアクセスを有効にします。</p></article>
+<article><span>03</span><h3>東京ハブに参加</h3><p>Tokyo Hubのページで「Join group」を選択。イベント情報を確認し、興味のある集まりにご参加ください。</p></article>
 </div>
 <div class="panel split">
 <div>
-<h3 class="guide-title">登録ガイド</h3>
-<p>英語サイトですが、手順はシンプルです。日本語ガイドとInstagram動画を参考に進めてください。</p>
+<h3 class="guide-title">画面を見ながら、一歩ずつ。</h3>
+<p>詳しい操作は日本語PDFまたは動画でご確認いただけます。</p>
 </div>
 <div class="buttons vertical">
-<a class="cta" href="https://www.instagram.com/reel/DS9eqPFEwUo/" target="_blank">動画で見る</a>
-<a class="button-secondary" href="assets/amg-private-lounge-registration-guide.pdf" target="_blank">登録ガイド PDF</a>
+<a class="cta" href="assets/amg-private-lounge-registration-guide.pdf" target="_blank" rel="noopener">日本語の登録ガイド PDF</a>
+<a class="button-secondary" href="https://www.instagram.com/reel/DS9eqPFEwUo/" target="_blank" rel="noopener">動画で見る</a>
+</div>
+</div>
+<div class="registration-faq" aria-labelledby="faq-title">
+<h3 id="faq-title">登録・参加について、よくあるご質問</h3>
+<details open>
+<summary>英語が苦手でも参加できますか？</summary>
+<p>本サイトの日本語ガイドで、アカウント登録から東京ハブへの参加までの流れをご案内しています。公式サイトの操作に不安がある方は、まずPDFまたは動画をご覧ください。</p>
+</details>
+<details>
+<summary>VINとは何ですか？ なぜ登録するのですか？</summary>
+<p>VINは車両を識別する車台番号です。AMGオーナー向けコンテンツを利用するため、公式サイトに登録します。入力する画面は日本語ガイドでご確認ください。</p>
+</details>
+<details>
+<summary>アカウント登録後、東京ハブにはどう参加しますか？</summary>
+<p>公式サイトにログインし、Tokyo Hubページの「Join group」を選択してください。アカウント登録とは別に、東京ハブへの参加操作が必要です。</p>
+</details>
+<details>
+<summary>イベントへの申込はどこで行いますか？</summary>
+<p>各イベントの「イベントを見る」からAMG Private Lounge公式サイトへ進み、参加条件・費用・申込方法をご確認ください。本サイトではイベントの申込を受け付けていません。</p>
+</details>
+</div>
+</section>
+<section class="section muted" id="gifts" aria-labelledby="gifts-title">
+<div class="gifts-inner">
+<div class="gift-copy">
+<p class="eyebrow">A LITTLE EXTRA FROM AMG</p>
+<h2 id="gifts-title">AMG Germanyから、<br>メンバーの皆さんへ。</h2>
+<p>AMG Germanyから届くグッズも、イベントの楽しみのひとつ。仲間と過ごす時間に、AMGならではの彩りを添えてくれます。</p>
+<p class="gift-note">※写真はグッズの一例です。内容・配布の有無はイベントにより異なります。</p>
+</div>
+<!-- To change a gift photo, keep its filename or update the matching src below. -->
+<div class="gift-grid">
+<figure><img src="assets/amg-gift-box.jpg" alt="AMGロゴのギフトボックスとソックス" width="640" height="800" loading="lazy"/><figcaption>AMGギフトボックス</figcaption></figure>
+<figure><img src="assets/amg-cap.jpg" alt="AMG Private Loungeの黒いキャップ" width="640" height="800" loading="lazy"/><figcaption>AMG Private Lounge キャップ</figcaption></figure>
+<figure><img src="assets/amg-card-holder.jpg" alt="AMGロゴ入りの名刺入れ" width="585" height="800" loading="lazy"/><figcaption>名刺入れ</figcaption></figure>
+<figure><img src="assets/amg-strap.jpg" alt="AMGロゴ入りのストラップ" width="640" height="800" loading="lazy"/><figcaption>ストラップ</figcaption></figure>
 </div>
 </div>
 </section>
@@ -182,7 +325,7 @@
 <figure class="mosaic-item wide"><img alt="AMG cars lined up by palm trees" src="assets/miura-cars-palm.jpeg"/></figure>
 <figure class="mosaic-item"><img alt="AMG lineup" src="assets/miura-lineup.jpeg"/></figure>
 <figure class="mosaic-item"><img alt="cars by PL flag" src="assets/PL Flag.jpg"/></figure>
-<figure class="mosaic-item"><img alt="GT by Castle" src="assets/GT_by_Castle.jpeg"/></figure>
+<figure class="mosaic-item castle-photo"><img alt="GT by Castle" src="assets/GT_by_Castle.jpeg"/></figure>
 <figure class="mosaic-item"><img alt="cars at Revival Cafe" src="assets/Revival_Cafe.jpeg"/></figure>
 </div>
 </section>
@@ -194,7 +337,7 @@
 <img alt="LIQUI MOLY Asia Pacific logo" src="assets/liquimoly-logo.jpg">
 <h3><a class="partner-name-link" href="https://liquimolyasia.co.jp/" target="_blank">LIQUI MOLY Asia Pacific</a></h3>
 <p>テクニカルパートナーとして、東京ハブの活動をサポートいただいています。</p>
-</img></article>
+</article>
 <article>
 <img alt="Office-K logo" src="assets/office-k-logo.png"/>
 <h3><a class="partner-name-link" href="https://officektokyo.com/" target="_blank">Office-K</a></h3>
