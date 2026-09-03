@@ -319,3 +319,8 @@ nav a[aria-current="page"]{color:white;border-bottom:1px solid #ef4444}
     object-position:center;
   }
 }
+/* Prevent the header button from shrinking or wrapping */
+.site-header .cta.small {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
