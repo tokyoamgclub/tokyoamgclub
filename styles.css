@@ -324,3 +324,7 @@ nav a[aria-current="page"]{color:white;border-bottom:1px solid #ef4444}
   white-space: nowrap;
   flex-shrink: 0;
 }
+.fastest-lap {
+  justify-content: flex-start;
+  gap: 12px;
+}
